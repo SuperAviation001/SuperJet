@@ -26,22 +26,10 @@
 
 <div id="content">
 <p>
-<?php
-$con=mysqli_connect("localhost","root","","project") or die("Data Connection Error") ;
-$query="select * from flights";
-$res=mysqli_query($con,$query)or die ("query error");
-$output="";
-$output.="<table border=1 width=90% height=80% ><tr><td>id</td><td>time</td><td>Destination</td><td>flight</td><td>status</td></tr>";
-while($row=mysqli_fetch_array($res))
-{
-extract($row);
+no
+<br/>
+we dont have anywhere to contact me
 
-$output.="<tr><td>$id</td><td>$time</td><td>$destination</td><td>$flight</td><td>$status</td></tr>";
-}
-$output.="</table>";
-echo $output;
-
-?>
 
 
 </p>
